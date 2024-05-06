@@ -1,0 +1,12 @@
+####TrimGalore-0.6.10
+
+./trim_galore --paired /home/jy3062/gRNA/final_seq/a-LV-P5_S1_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/a-LV-P5_S1_R2_001.fastq.gz -j 8
+./trim_galore --paired /home/jy3062/gRNA/final_seq/a-LV-P6_S2_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/a-LV-P6_S2_R2_001.fastq.gz -j 8
+./trim_galore --paired /home/jy3062/gRNA/final_seq/a-LV-P7_S3_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/a-LV-P7_S3_R2_001.fastq.gz -j 8
+./trim_galore --paired /home/jy3062/gRNA/final_seq/i-LV-P6_S4_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/i-LV-P6_S4_R2_001.fastq.gz -j 8
+./trim_galore --paired /home/jy3062/gRNA/final_seq/i-LV-P7_S5_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/i-LV-P7_S5_R2_001.fastq.gz -j 8
+./trim_galore --paired /home/jy3062/gRNA/final_seq/i-LV-P8_S6_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/i-LV-P8_S6_R2_001.fastq.gz -j 8
+./trim_galore --paired /home/jy3062/gRNA/final_seq/i-9p21-P6P7_S7_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/i-9p21-P6P7_S7_R2_001.fastq.gz -j 8
+./trim_galore --paired /home/jy3062/gRNA/final_seq/i-9p21-P8P9_S8_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/i-9p21-P8P9_S8_R2_001.fastq.gz -j 8
+
+
