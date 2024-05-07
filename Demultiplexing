@@ -5,7 +5,7 @@ from Bio import SeqIO
 def filter_sequences(input_file, output_file, sequence):
     with gzip.open(input_file, 'rt') as in_handle, gzip.open(output_file, 'wt') as out_handle:
         sequences = SeqIO.parse(in_handle, 'fastq')
-        filtered_sequences = (seq for seq in sequences if sequence in str(seq.seq[:20]))
+        filtered_sequences = (seq for seq in sequences if sequence in str(seq.seq[:30]))
         SeqIO.write(filtered_sequences, out_handle, 'fastq')
     print(f"Filtering complete for {output_file}.")
 
@@ -19,12 +19,12 @@ def main(args):
         'F4': f'{args.prefix}_F4.fastq.gz'
     }
 
-    # Sequences to search within the first 20 base pairs of the FASTQ files
+    # Sequences to search within the first 30 base pairs of the FASTQ files
     search_sequences = {
-        'F1': 'atgcacgacatacg',
-        'F2': 'atgcacgaccgtg',
-        'F3': 'sequence_for_F3',  # Replace with actual sequence
-        'F4': 'sequence_for_F4'   # Replace with actual sequence
+        'F1': 'GTAGAGGCTTTA',
+        'F2': 'TGCTTAGCTTTA',
+        'F3': 'ACATCTGCTTTA',
+        'F4': 'CTCGACGCTTTA'
     }
 
     # Filtering process for each specified file and sequence
