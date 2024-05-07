@@ -1,12 +1,42 @@
-####TrimGalore-0.6.10
+import argparse
+import gzip
+from Bio import SeqIO
 
-./trim_galore --paired /home/jy3062/gRNA/final_seq/a-LV-P5_S1_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/a-LV-P5_S1_R2_001.fastq.gz -j 8
-./trim_galore --paired /home/jy3062/gRNA/final_seq/a-LV-P6_S2_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/a-LV-P6_S2_R2_001.fastq.gz -j 8
-./trim_galore --paired /home/jy3062/gRNA/final_seq/a-LV-P7_S3_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/a-LV-P7_S3_R2_001.fastq.gz -j 8
-./trim_galore --paired /home/jy3062/gRNA/final_seq/i-LV-P6_S4_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/i-LV-P6_S4_R2_001.fastq.gz -j 8
-./trim_galore --paired /home/jy3062/gRNA/final_seq/i-LV-P7_S5_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/i-LV-P7_S5_R2_001.fastq.gz -j 8
-./trim_galore --paired /home/jy3062/gRNA/final_seq/i-LV-P8_S6_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/i-LV-P8_S6_R2_001.fastq.gz -j 8
-./trim_galore --paired /home/jy3062/gRNA/final_seq/i-9p21-P6P7_S7_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/i-9p21-P6P7_S7_R2_001.fastq.gz -j 8
-./trim_galore --paired /home/jy3062/gRNA/final_seq/i-9p21-P8P9_S8_R1_001.fastq.gz /home/jy3062/gRNA/final_seq/i-9p21-P8P9_S8_R2_001.fastq.gz -j 8
+def filter_sequences(input_file, output_file, sequence):
+    with gzip.open(input_file, 'rt') as in_handle, gzip.open(output_file, 'wt') as out_handle:
+        sequences = SeqIO.parse(in_handle, 'fastq')
+        filtered_sequences = (seq for seq in sequences if sequence in str(seq.seq[:20]))
+        SeqIO.write(filtered_sequences, out_handle, 'fastq')
+    print(f"Filtering complete for {output_file}.")
+
+def main(args):
+    # Paths to your input and output files
+    input_path = args.input
+    output_paths = {
+        'F1': f'{args.prefix}_F1.fastq.gz',
+        'F2': f'{args.prefix}_F2.fastq.gz',
+        'F3': f'{args.prefix}_F3.fastq.gz',
+        'F4': f'{args.prefix}_F4.fastq.gz'
+    }
+
+    # Sequences to search within the first 20 base pairs of the FASTQ files
+    search_sequences = {
+        'F1': 'atgcacgacatacg',
+        'F2': 'atgcacgaccgtg',
+        'F3': 'sequence_for_F3',  # Replace with actual sequence
+        'F4': 'sequence_for_F4'   # Replace with actual sequence
+    }
+
+    # Filtering process for each specified file and sequence
+    for key, output_path in output_paths.items():
+        filter_sequences(input_path, output_path, search_sequences[key])
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Filter FASTQ files based on specific sequences.')
+    parser.add_argument('-i', '--input', required=True, help='Input FASTQ.gz file')
+    parser.add_argument('-prefix', required=True, help='Prefix for output file names')
+    
+    args = parser.parse_args()
+    main(args)
 
 
