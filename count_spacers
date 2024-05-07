@@ -1,0 +1,131 @@
+gunzip *.gz
+#a-LV
+  python3 count_spacers_py3.py -f a-LV-P5_F1.fastq -i LV_guides.csv -o a-LV-P5_F1_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P5_F1.stastics
+mv a-LV-P5_F1_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P5_F1_spacer_count.csv
+
+  python3 count_spacers_py3.py -f a-LV-P5_F2.fastq -i LV_guides.csv -o a-LV-P5_F2_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P5_F2.stastics
+mv a-LV-P5_F2_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P5_F2_spacer_count.csv
+
+  python3 count_spacers_py3.py -f a-LV-P5_F3.fastq -i LV_guides.csv -o a-LV-P5_F3_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P5_F3.stastics
+mv a-LV-P5_F3_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P5_F3_spacer_count.csv
+
+  python3 count_spacers_py3.py -f a-LV-P5_F4.fastq -i LV_guides.csv -o a-LV-P5_F4_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P5_F4.stastics
+mv a-LV-P5_F4_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P5_F4_spacer_count.csv
+
+    python3 count_spacers_py3.py -f a-LV-P6_F1.fastq -i LV_guides.csv -o a-LV-P6_F1_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P6_F1.stastics
+mv a-LV-P6_F1_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P6_F1_spacer_count.csv
+
+  python3 count_spacers_py3.py -f a-LV-P6_F2.fastq -i LV_guides.csv -o a-LV-P6_F2_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P6_F2.stastics
+mv a-LV-P6_F2_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P6_F2_spacer_count.csv
+
+  python3 count_spacers_py3.py -f a-LV-P6_F3.fastq -i LV_guides.csv -o a-LV-P6_F3_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P6_F3.stastics
+mv a-LV-P6_F3_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P6_F3_spacer_count.csv
+
+  python3 count_spacers_py3.py -f a-LV-P6_F4.fastq -i LV_guides.csv -o a-LV-P6_F4_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P6_F4.stastics
+mv a-LV-P6_F4_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P6_F4_spacer_count.csv
+
+  python3 count_spacers_py3.py -f a-LV-P7_F1.fastq -i LV_guides.csv -o a-LV-P7_F1_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P7_F1.stastics
+mv a-LV-P7_F1_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P7_F1_spacer_count.csv
+
+  python3 count_spacers_py3.py -f a-LV-P7_F2.fastq -i LV_guides.csv -o a-LV-P7_F2_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P7_F2.stastics
+mv a-LV-P7_F2_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P7_F2_spacer_count.csv
+
+  python3 count_spacers_py3.py -f a-LV-P7_F3.fastq -i LV_guides.csv -o a-LV-P7_F3_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P7_F3.stastics
+mv a-LV-P7_F3_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P7_F3_spacer_count.csv
+
+  python3 count_spacers_py3.py -f a-LV-P7_F4.fastq -i LV_guides.csv -o a-LV-P7_F4_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P7_F4.stastics
+mv a-LV-P7_F4_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/a-LV-P7_F4_spacer_count.csv
+
+#i-LV
+    python3 count_spacers_py3.py -f i-LV-P6_F1.fastq -i LV_guides.csv -o i-LV-P6_F1_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P6_F1.stastics
+mv i-LV-P6_F1_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P6_F1_spacer_count.csv
+
+  python3 count_spacers_py3.py -f i-LV-P6_F2.fastq -i LV_guides.csv -o i-LV-P6_F2_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P6_F2.stastics
+mv i-LV-P6_F2_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P6_F2_spacer_count.csv
+
+  python3 count_spacers_py3.py -f i-LV-P6_F3.fastq -i LV_guides.csv -o i-LV-P6_F3_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P6_F3.stastics
+mv i-LV-P6_F3_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P6_F3_spacer_count.csv
+
+  python3 count_spacers_py3.py -f i-LV-P6_F4.fastq -i LV_guides.csv -o i-LV-P6_F4_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P6_F4.stastics
+mv i-LV-P6_F4_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P6_F4_spacer_count.csv
+
+      python3 count_spacers_py3.py -f i-LV-P7_F1.fastq -i LV_guides.csv -o i-LV-P7_F1_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P7_F1.stastics
+mv i-LV-P7_F1_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P7_F1_spacer_count.csv
+
+  python3 count_spacers_py3.py -f i-LV-P7_F2.fastq -i LV_guides.csv -o i-LV-P7_F2_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P7_F2.stastics
+mv i-LV-P7_F2_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P7_F2_spacer_count.csv
+
+  python3 count_spacers_py3.py -f i-LV-P7_F3.fastq -i LV_guides.csv -o i-LV-P7_F3_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P7_F3.stastics
+mv i-LV-P7_F3_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P7_F3_spacer_count.csv
+
+  python3 count_spacers_py3.py -f i-LV-P7_F4.fastq -i LV_guides.csv -o i-LV-P7_F4_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P7_F4.stastics
+mv i-LV-P7_F4_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P7_F4_spacer_count.csv 
+     
+  python3 count_spacers_py3.py -f i-LV-P8_F1.fastq -i LV_guides.csv -o i-LV-P8_F1_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P8_F1.stastics
+mv i-LV-P8_F1_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P8_F1_spacer_count.csv
+  
+ python3 count_spacers_py3.py -f i-LV-P8_F2.fastq -i LV_guides.csv -o i-LV-P8_F2_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P8_F2.stastics
+mv i-LV-P8_F2_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P8_F2_spacer_count.csv
+
+  python3 count_spacers_py3.py -f i-LV-P8_F3.fastq -i LV_guides.csv -o i-LV-P8_F3_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P8_F3.stastics
+mv i-LV-P8_F3_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P8_F3_spacer_count.csv
+
+  python3 count_spacers_py3.py -f i-LV-P8_F4.fastq -i LV_guides.csv -o i-LV-P8_F4_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P8_F4.stastics
+mv i-LV-P8_F4_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-LV-P8_F4_spacer_count.csv
+
+  #9p21
+  python3 count_spacers_py3.py -f i-9p21-P6P7_F1.fastq -i 9p21_guides.csv -o i-9p21-P6P7_F1_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P6P7_F1.stastics
+mv i-9p21-P6P7_F1_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P6P7_F1_spacer_count.csv
+  
+  python3 count_spacers_py3.py -f i-9p21-P6P7_F2.fastq -i 9p21_guides.csv -o i-9p21-P6P7_F2_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P6P7_F2.stastics
+mv i-9p21-P6P7_F2_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P6P7_F2_spacer_count.csv
+  
+  python3 count_spacers_py3.py -f i-9p21-P6P7_F3.fastq -i 9p21_guides.csv -o i-9p21-P6P7_F3_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P6P7_F3.stastics
+mv i-9p21-P6P7_F3_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P6P7_F3_spacer_count.csv
+  
+  python3 count_spacers_py3.py -f i-9p21-P6P7_F4.fastq -i 9p21_guides.csv -o i-9p21-P6P7_F4_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P6P7_F4.stastics
+mv i-9p21-P6P7_F4_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P6P7_F4_spacer_count.csv
+
+  python3 count_spacers_py3.py -f i-9p21-P8P9_F1.fastq -i 9p21_guides.csv -o i-9p21-P8P9_F1_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P8P9_F1.stastics
+mv i-9p21-P8P9_F1_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P8P9_F1_spacer_count.csv
+  
+  python3 count_spacers_py3.py -f i-9p21-P8P9_F2.fastq -i 9p21_guides.csv -o i-9p21-P8P9_F2_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P8P9_F2.stastics
+mv i-9p21-P8P9_F2_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P8P9_F2_spacer_count.csv
+  
+  python3 count_spacers_py3.py -f i-9p21-P8P9_F3.fastq -i 9p21_guides.csv -o i-9p21-P8P9_F3_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P8P9_F3.stastics
+mv i-9p21-P8P9_F3_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P8P9_F3_spacer_count.csv
+  
+  python3 count_spacers_py3.py -f i-9p21-P8P9_F4.fastq -i 9p21_guides.csv -o i-9p21-P8P9_F4_spacer_count.csv
+mv statistics.txt /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P8P9_F4.stastics
+mv i-9p21-P8P9_F4_spacer_count.csv /home/jiping/gRNA/senescence/demultiplexing/analysis/i-9p21-P8P9_F4_spacer_count.csv
