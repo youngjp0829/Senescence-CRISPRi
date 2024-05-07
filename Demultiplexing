@@ -21,10 +21,10 @@ def main(args):
 
     # Sequences to search within the first 30 base pairs of the FASTQ files
     search_sequences = {
-        'F1': 'GTAGAGGCTTTA',
-        'F2': 'TGCTTAGCTTTA',
-        'F3': 'ACATCTGCTTTA',
-        'F4': 'CTCGACGCTTTA'
+        'F1': 'GTAGAGGCTTTA', #TAAGTAGAGGCTTTATATATCT
+        'F2': 'TGCTTAGCTTTA', #ATCATGCTTAGCTTTATATATCT
+        'F3': 'ACATCTGCTTTA', #GATGCACATCTGCTTTATATATCT
+        'F4': 'CTCGACGCTTTA'  #CGATTGCTCGACGCTTTATATATCT
     }
 
     # Filtering process for each specified file and sequence
